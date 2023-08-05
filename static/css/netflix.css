@@ -1,0 +1,173 @@
+/*All the images used in each of the cards will have this design along with the transition designs below  */
+img {
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  margin-top: 5px;
+  transition: 1s;
+}
+
+img:hover {
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-40px);
+}
+
+/*body in index page  */
+.bod {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*body in results page  */
+.resbod {
+  background-color:black;
+  font-family: Optima;
+}
+
+/*h1 and h2 on the results page  */
+.h, .p{
+  font-style: bold;
+  text-align: center;
+}
+
+.home {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*cards used on results page gotten from bootstrap  */
+.card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 1s;
+  font-family: Optima;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 20px;
+
+}
+
+/*transition after hovering on card  */
+.card:hover {
+  background-color: #fc7272;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-20px);
+}
+
+/*banner at the top of results page  */
+.group {
+  background-color: #8c2626;
+  color: white;
+  transition: 1s;
+  font-weight: bold;
+  
+}
+
+/*banner on results page invisible link to home page  */
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/*transition when hovering over the banner on results page  */
+.group:hover {
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background-color: #c25b5b;
+  color: lemonchiffon;
+}
+
+/*index page moving background  */
+.scrolling-image-container {
+  overflow: hidden;
+}
+
+.scrolling-image {
+  background: url("https://s3-us-west-2.amazonaws.com/techvibes/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg") repeat-x;
+  height: 100%; 
+  width: 7680px;
+  position: fixed;
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px); 
+  }
+}
+
+/*form input background   */
+.sign-in-back {
+    background-color: black;
+    opacity: 85%;
+    width: 500px;
+    height: 250px;
+    display:block;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 250px;
+}
+
+/*form input information and text styling  */
+.inside {
+    opacity: 100%
+}
+
+.text {
+    color: white;
+    background-color: red;
+    border-radius: 0px;
+    display: inline;
+    opacity: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family:Georgia;
+    margin-top: 0px;
+    margin-left: 110px;
+    transition: 0.7s;
+}
+
+.text:hover {
+  color: red;
+  background-color: white;
+  border-radius: 12px;
+}
+
+/*submit button  */
+.submit {
+    opacity: 100%;
+    text-align: center;
+}
+
+
+.nameInput, .genreInput {
+    opacity: 100%;
+    text-align: center;
+    margin-top: 13px;
+}
+
+.form-select {
+  width: 20px;
+  margin-top: 6px; 
+}
+
+#selector {
+  width: 50%; 
+  margin-left: 135px;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Recommender</title>
+    <link rel="stylesheet" href="../static/css/netflix.css">
+  <!--bootstrap css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+  
+  <!--this is the body of the index page that allows for the moving background, the form that users input information like their name and genre into and the submit button  -->
+<body class="bod">
+  <div class="scrolling-image-container">
+    <div class="scrolling-image"></div>
+  </div>
+</body>
+  
+<!--the sign in index page where the actual interaction happens  -->
+<div class="sign-in-back">
+  <div class="inside">
+      <br>
+    <p class="text">Netflix Recommender</p>
+    <form method="post" action="/results">
+        <div class="nameInput">
+          <input type="text" style="text-align:center;" name="name" placeholder="Enter Your Name">
+        </div>
+      
+      <!-- the selector drop down menu from bootstrap  -->
+        <select class="form-select" aria-label="Default select example" name="selector" style="text-align:center;" id="selector">
+          <option selected>Choose Preferred Category</option>
+          <option value="Finance">Finance</option>
+          <option value="Action">Action</option>
+          <option value="Crime">Crime</option>
+          <option value="Documentaries">Documentaries</option>
+          <option value="Dramas">Dramas</option>
+          <option value="Horror">Horror</option>
+          <option value="Romance">Romance</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="Thrillers">Thrillers</option>
+        </select>
+      
+<!--submit button  -->
+        <div class="submit">
+          <input class="btn btn-danger mt-3" type="submit" value="Submit"/>
+        </div>
+    </form>
+  </div>
+</div>
+ <!--bootstrap Javascript link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+</html>
