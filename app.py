@@ -14,6 +14,7 @@ app = Flask(__name__)
 # -- Routes section --
 # route to index page
 @app.route('/')
+
 @app.route('/index')
 def index():
     return render_template("index.html")
@@ -40,4 +41,4 @@ def results():
 	
 	
 # This keeps us in debug mode so you don't have to constantly refresh
-app.run(host='0.0.0.0', port=81, debug=True)
+app.run(host='0.0.0.0', port=5000, debug=True)
