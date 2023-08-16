@@ -1,7 +1,7 @@
 # FinTechFocus-WebsiteProject
 ## Prototype Netflix Recommender utilizing Flask, HTML, CSS, and Python
 
-This project is a website that allows the user to select their preferred Netflix movie/show category from a dropdown menu and receive four recommendations in that category.
+This project is a website that allows the user to select their preferred Netflix movie/show category and receive four recommendations in that category.
 - Utilized Git for version control, Flask for backend logic, Bootstrap v5.3 for responsive UI, HTML/CSS for frontend
 design, and Python for backend scripting
 - Developed a seamless webpage where users input their name and select a preferred Netflix category from a
